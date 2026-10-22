@@ -116,8 +116,7 @@ void clear(Queue& q) {
      Node *temp = q.depan;
 
      while(temp!=nullptr){
-          Node *del = new Node;
-          del = temp;
+          Node *del = temp;
           temp = temp->next;
           delete del;
      }
